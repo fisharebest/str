@@ -1,0 +1,6 @@
+![Latest version](https://img.shields.io/github/v/release/fisharebest/str?sort=semver)
+![Licence](https://img.shields.io/github/license/fisharebest/str)
+[![phpunit](https://github.com/fisharebest/str/actions/workflows/phpunit.yaml/badge.svg)](https://github.com/fisharebest/str/actions/workflows/phpunit.yaml)
+[![phpcs](https://github.com/fisharebest/str/actions/workflows/phpcs.yaml/badge.svg)](https://github.com/fisharebest/str/actions/workflows/phpcs.yaml)
+[![phpstan](https://github.com/fisharebest/str/actions/workflows/phpstan.yaml/badge.svg)](https://github.com/fisharebest/str/actions/workflows/phpstan.yaml)
+[![psalm](https://github.com/fisharebest/str/actions/workflows/psalm.yaml/badge.svg)](https://github.com/fisharebest/str/actions/workflows/psalm.yaml)

@@ -1,0 +1,33 @@
+{
+    "name": "fisharebest/str",
+    "description": "Fluent strings",
+    "keywords": ["fluent", "strings"],
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Fisharebest\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "8.1 - 8.3",
+        "ext-mbstring": "*"
+    },
+    "scripts-descriptions": {
+        "qa": "Run QA checks"
+    },
+    "scripts": {
+        "qa": [
+            "@composer global require --dev --no-interaction --quiet squizlabs/php_codesniffer=*",
+            "~/.composer/vendor/bin/phpcs -p --colors --extensions=php --standard=PSR12 src tests",
+            "@composer global require --dev --no-interaction --quiet phpstan/phpstan=*",
+            "~/.composer/vendor/bin/phpstan analyze --level=max src tests",
+            "@composer global require --dev --no-interaction --quiet phpunit/phpunit=*",
+            "~/.composer/vendor/bin/phpunit",
+            "@composer global require --dev --no-interaction --quiet vimeo/psalm=*",
+            "~/.composer/vendor/bin/psalm --stats --no-diff"
+        ]
+    }
+}
